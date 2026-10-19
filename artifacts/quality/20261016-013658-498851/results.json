@@ -1,0 +1,350 @@
+[
+  {
+    "model": "1. baseline / seed_0 / final_model",
+    "model_path": "runs/baseline/seed_0/final_model.zip",
+    "model_sha256": "6ea5c9d75710c533f86c412940af31cfcf39c73d79c9227c0eabce2cdd961cd8",
+    "scenario": "calm",
+    "weather": {
+      "title": "Calm",
+      "enable_wind": false,
+      "wind_power": 0.0,
+      "turbulence_power": 0.0
+    },
+    "episodes": 50,
+    "mean_base_return": 215.24963295740415,
+    "std_base_return": 90.45344314570244,
+    "min_base_return": -9.37976288324424,
+    "max_base_return": 304.27195462441614,
+    "landed_rate": 0.84,
+    "landed_ci95": [
+      0.7148578393696501,
+      0.916625793219666
+    ],
+    "timeout_rate": 0.02,
+    "mean_steps": 329.1,
+    "mean_fuel_proxy": 43.92779999999999,
+    "mean_hover_fraction": 0.31409338078978655,
+    "mean_shaped_return": 215.24963295740415,
+    "benchmark_met": true,
+    "benchmark_applicable": true
+  },
+  {
+    "model": "1. baseline / seed_0 / final_model",
+    "model_path": "runs/baseline/seed_0/final_model.zip",
+    "model_sha256": "6ea5c9d75710c533f86c412940af31cfcf39c73d79c9227c0eabce2cdd961cd8",
+    "scenario": "breezy",
+    "weather": {
+      "title": "Breezy",
+      "enable_wind": true,
+      "wind_power": 8.0,
+      "turbulence_power": 0.5
+    },
+    "episodes": 50,
+    "mean_base_return": 156.48012079753337,
+    "std_base_return": 134.27103364148238,
+    "min_base_return": -63.68819226412448,
+    "max_base_return": 308.0797233905222,
+    "landed_rate": 0.62,
+    "landed_ci95": [
+      0.4815044693099298,
+      0.7413721068980641
+    ],
+    "timeout_rate": 0.0,
+    "mean_steps": 293.36,
+    "mean_fuel_proxy": 42.7134,
+    "mean_hover_fraction": 0.234769301809157,
+    "mean_shaped_return": 156.48012079753337,
+    "benchmark_met": null,
+    "benchmark_applicable": false
+  },
+  {
+    "model": "1. baseline / seed_0 / final_model",
+    "model_path": "runs/baseline/seed_0/final_model.zip",
+    "model_sha256": "6ea5c9d75710c533f86c412940af31cfcf39c73d79c9227c0eabce2cdd961cd8",
+    "scenario": "gusty",
+    "weather": {
+      "title": "Gusty",
+      "enable_wind": true,
+      "wind_power": 15.0,
+      "turbulence_power": 1.5
+    },
+    "episodes": 50,
+    "mean_base_return": 65.44900417974516,
+    "std_base_return": 124.66345912030785,
+    "min_base_return": -73.99139681774577,
+    "max_base_return": 308.08635979984643,
+    "landed_rate": 0.3,
+    "landed_ci95": [
+      0.19103553500880954,
+      0.437503504644534
+    ],
+    "timeout_rate": 0.0,
+    "mean_steps": 259.9,
+    "mean_fuel_proxy": 39.769800000000004,
+    "mean_hover_fraction": 0.10494462641535306,
+    "mean_shaped_return": 65.44900417974516,
+    "benchmark_met": null,
+    "benchmark_applicable": false
+  },
+  {
+    "model": "2. fixed / seed_0 / final_model",
+    "model_path": "runs/fixed/seed_0/final_model.zip",
+    "model_sha256": "685a5ece4ad4cb2b7bc8e8be79aa35b36f6ec20adaceb9c2ee4cacfdf94a3874",
+    "scenario": "calm",
+    "weather": {
+      "title": "Calm",
+      "enable_wind": false,
+      "wind_power": 0.0,
+      "turbulence_power": 0.0
+    },
+    "episodes": 50,
+    "mean_base_return": 209.68763034391404,
+    "std_base_return": 61.55152531790724,
+    "min_base_return": -19.566840488451305,
+    "max_base_return": 266.88152432996617,
+    "landed_rate": 0.86,
+    "landed_ci95": [
+      0.7381380628941446,
+      0.9304916657298371
+    ],
+    "timeout_rate": 0.1,
+    "mean_steps": 474.3,
+    "mean_fuel_proxy": 67.6044,
+    "mean_hover_fraction": 0.6529019851441206,
+    "mean_shaped_return": 209.68763034391404,
+    "benchmark_met": true,
+    "benchmark_applicable": true
+  },
+  {
+    "model": "2. fixed / seed_0 / final_model",
+    "model_path": "runs/fixed/seed_0/final_model.zip",
+    "model_sha256": "685a5ece4ad4cb2b7bc8e8be79aa35b36f6ec20adaceb9c2ee4cacfdf94a3874",
+    "scenario": "breezy",
+    "weather": {
+      "title": "Breezy",
+      "enable_wind": true,
+      "wind_power": 8.0,
+      "turbulence_power": 0.5
+    },
+    "episodes": 50,
+    "mean_base_return": 213.85075566083452,
+    "std_base_return": 58.008662767654585,
+    "min_base_return": -27.66264287206438,
+    "max_base_return": 284.5265944736599,
+    "landed_rate": 0.92,
+    "landed_ci95": [
+      0.8116175308165717,
+      0.968450485911407
+    ],
+    "timeout_rate": 0.04,
+    "mean_steps": 450.72,
+    "mean_fuel_proxy": 67.5204,
+    "mean_hover_fraction": 0.5323872060377245,
+    "mean_shaped_return": 213.85075566083452,
+    "benchmark_met": null,
+    "benchmark_applicable": false
+  },
+  {
+    "model": "2. fixed / seed_0 / final_model",
+    "model_path": "runs/fixed/seed_0/final_model.zip",
+    "model_sha256": "685a5ece4ad4cb2b7bc8e8be79aa35b36f6ec20adaceb9c2ee4cacfdf94a3874",
+    "scenario": "gusty",
+    "weather": {
+      "title": "Gusty",
+      "enable_wind": true,
+      "wind_power": 15.0,
+      "turbulence_power": 1.5
+    },
+    "episodes": 50,
+    "mean_base_return": 187.92466978948215,
+    "std_base_return": 85.60312170840326,
+    "min_base_return": -56.269787377602995,
+    "max_base_return": 281.05761559780075,
+    "landed_rate": 0.82,
+    "landed_ci95": [
+      0.6920394632569922,
+      0.9022980732976582
+    ],
+    "timeout_rate": 0.08,
+    "mean_steps": 463.9,
+    "mean_fuel_proxy": 63.3372,
+    "mean_hover_fraction": 0.27454720218556183,
+    "mean_shaped_return": 187.92466978948215,
+    "benchmark_met": null,
+    "benchmark_applicable": false
+  },
+  {
+    "model": "3. hover / seed_0 / final_model",
+    "model_path": "runs/hover/seed_0/final_model.zip",
+    "model_sha256": "41485cde98dbdb6a1e535f085bf7d79ba4093c9ca77a038d1c808f3f171ad748",
+    "scenario": "calm",
+    "weather": {
+      "title": "Calm",
+      "enable_wind": false,
+      "wind_power": 0.0,
+      "turbulence_power": 0.0
+    },
+    "episodes": 50,
+    "mean_base_return": -9.153999818581273,
+    "std_base_return": 19.721384996987496,
+    "min_base_return": -51.230948207021825,
+    "max_base_return": 22.62088251123132,
+    "landed_rate": 0.0,
+    "landed_ci95": [
+      6.938893903907228e-18,
+      0.07134759913335872
+    ],
+    "timeout_rate": 1.0,
+    "mean_steps": 1000.0,
+    "mean_fuel_proxy": 172.60199999999998,
+    "mean_hover_fraction": 0.9623599999999999,
+    "mean_shaped_return": -9.153999818581273,
+    "benchmark_met": false,
+    "benchmark_applicable": true
+  },
+  {
+    "model": "3. hover / seed_0 / final_model",
+    "model_path": "runs/hover/seed_0/final_model.zip",
+    "model_sha256": "41485cde98dbdb6a1e535f085bf7d79ba4093c9ca77a038d1c808f3f171ad748",
+    "scenario": "breezy",
+    "weather": {
+      "title": "Breezy",
+      "enable_wind": true,
+      "wind_power": 8.0,
+      "turbulence_power": 0.5
+    },
+    "episodes": 50,
+    "mean_base_return": -22.723420842913534,
+    "std_base_return": 26.817169556590265,
+    "min_base_return": -93.0571538161027,
+    "max_base_return": 31.526585726648754,
+    "landed_rate": 0.0,
+    "landed_ci95": [
+      6.938893903907228e-18,
+      0.07134759913335872
+    ],
+    "timeout_rate": 1.0,
+    "mean_steps": 1000.0,
+    "mean_fuel_proxy": 174.29999999999995,
+    "mean_hover_fraction": 0.9026799999999998,
+    "mean_shaped_return": -22.723420842913534,
+    "benchmark_met": null,
+    "benchmark_applicable": false
+  },
+  {
+    "model": "3. hover / seed_0 / final_model",
+    "model_path": "runs/hover/seed_0/final_model.zip",
+    "model_sha256": "41485cde98dbdb6a1e535f085bf7d79ba4093c9ca77a038d1c808f3f171ad748",
+    "scenario": "gusty",
+    "weather": {
+      "title": "Gusty",
+      "enable_wind": true,
+      "wind_power": 15.0,
+      "turbulence_power": 1.5
+    },
+    "episodes": 50,
+    "mean_base_return": -40.12053017767608,
+    "std_base_return": 49.4611959462629,
+    "min_base_return": -111.53692876670274,
+    "max_base_return": 153.69279806808643,
+    "landed_rate": 0.04,
+    "landed_ci95": [
+      0.011038884327619805,
+      0.1346009068750702
+    ],
+    "timeout_rate": 0.94,
+    "mean_steps": 978.74,
+    "mean_fuel_proxy": 172.99259999999998,
+    "mean_hover_fraction": 0.5071813682297024,
+    "mean_shaped_return": -40.12053017767608,
+    "benchmark_met": null,
+    "benchmark_applicable": false
+  },
+  {
+    "model": "4. time / seed_0 / final_model",
+    "model_path": "runs/time/seed_0/final_model.zip",
+    "model_sha256": "043d069fae7e34b8cba97b310e9a0c8ab75266521c1e9cd26a25122b4f90efa0",
+    "scenario": "calm",
+    "weather": {
+      "title": "Calm",
+      "enable_wind": false,
+      "wind_power": 0.0,
+      "turbulence_power": 0.0
+    },
+    "episodes": 50,
+    "mean_base_return": 238.68256616854708,
+    "std_base_return": 32.43300730028684,
+    "min_base_return": 117.91544201543735,
+    "max_base_return": 283.55646017466756,
+    "landed_rate": 0.94,
+    "landed_ci95": [
+      0.8378290831116182,
+      0.979385029651026
+    ],
+    "timeout_rate": 0.06,
+    "mean_steps": 396.48,
+    "mean_fuel_proxy": 50.70719999999999,
+    "mean_hover_fraction": 0.5096313637878315,
+    "mean_shaped_return": 238.68256616854708,
+    "benchmark_met": true,
+    "benchmark_applicable": true
+  },
+  {
+    "model": "4. time / seed_0 / final_model",
+    "model_path": "runs/time/seed_0/final_model.zip",
+    "model_sha256": "043d069fae7e34b8cba97b310e9a0c8ab75266521c1e9cd26a25122b4f90efa0",
+    "scenario": "breezy",
+    "weather": {
+      "title": "Breezy",
+      "enable_wind": true,
+      "wind_power": 8.0,
+      "turbulence_power": 0.5
+    },
+    "episodes": 50,
+    "mean_base_return": 224.52073476798978,
+    "std_base_return": 47.73474483812686,
+    "min_base_return": 0.048114480210287525,
+    "max_base_return": 275.59293836918573,
+    "landed_rate": 0.94,
+    "landed_ci95": [
+      0.8378290831116182,
+      0.979385029651026
+    ],
+    "timeout_rate": 0.04,
+    "mean_steps": 392.44,
+    "mean_fuel_proxy": 50.68499999999999,
+    "mean_hover_fraction": 0.330704428276737,
+    "mean_shaped_return": 224.52073476798978,
+    "benchmark_met": null,
+    "benchmark_applicable": false
+  },
+  {
+    "model": "4. time / seed_0 / final_model",
+    "model_path": "runs/time/seed_0/final_model.zip",
+    "model_sha256": "043d069fae7e34b8cba97b310e9a0c8ab75266521c1e9cd26a25122b4f90efa0",
+    "scenario": "gusty",
+    "weather": {
+      "title": "Gusty",
+      "enable_wind": true,
+      "wind_power": 15.0,
+      "turbulence_power": 1.5
+    },
+    "episodes": 50,
+    "mean_base_return": 113.76422265613672,
+    "std_base_return": 144.60152000362757,
+    "min_base_return": -300.27308283550224,
+    "max_base_return": 292.5316561042502,
+    "landed_rate": 0.62,
+    "landed_ci95": [
+      0.4815044693099298,
+      0.7413721068980641
+    ],
+    "timeout_rate": 0.04,
+    "mean_steps": 378.74,
+    "mean_fuel_proxy": 48.261,
+    "mean_hover_fraction": 0.13547698505590838,
+    "mean_shaped_return": 113.76422265613672,
+    "benchmark_met": null,
+    "benchmark_applicable": false
+  }
+]

@@ -1,0 +1,63 @@
+<!doctype html><html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rocket Landing Lab - measured results</title>
+<style>body{font:17px/1.6 system-ui;background:#0b1120;color:#e2e8f0;max-width:1100px;
+margin:40px auto;padding:0 24px}h1{font-size:42px;line-height:1.2}h2{color:#67e8f9}
+section{background:#152034;padding:24px;border-radius:16px;margin:24px 0}
+.score{font-size:38px;font-weight:700;margin:8px 0}small{font-size:16px;font-weight:400}
+img{width:100%;border-radius:12px}video,.clip{width:min(100%,400px);margin:8px;border-radius:12px}
+table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:10px;border-bottom:1px solid #334155}
+.scroll{overflow-x:auto}a{color:#67e8f9}</style>
+<h1>Rocket Landing Lab</h1><p>PPO learns from eight numbers to choose between four engine actions.
+These results compare the original reward with three reward-shaping experiments.</p>
+<p><b>Read the original score first.</b> A custom bonus can increase training reward while making
+landing worse. Each model is tested without custom reward shaping. The same episode seeds
+are used across models. One training seed is a demonstration, not evidence of a robust improvement.</p>
+<img src="learning-curves.png" alt="Original validation rewards and custom training rewards">
+<div class="scroll"><table><thead><tr><th>Reward</th><th>Seed</th><th>Original score</th>
+<th>Landed</th><th>Timeout</th><th>Frames</th></tr></thead><tbody><tr><td>baseline</td><td>0</td><td>238.8</td><td>94%</td><td>0%</td><td>316</td></tr><tr><td>fixed</td><td>0</td><td>221.3</td><td>92%</td><td>7%</td><td>452</td></tr><tr><td>hover</td><td>0</td><td>-8.2</td><td>0%</td><td>100%</td><td>1000</td></tr><tr><td>time</td><td>0</td><td>235.9</td><td>89%</td><td>11%</td><td>412</td></tr></tbody></table></div>
+<p>The environment's +100 terminal reward identifies a resting lander. Failures combine crashes
+and leaving the bounds. Timeouts are recorded separately. Engine-use cost is a proxy based on
+the game's penalties, not kilograms of fuel. The 200-point benchmark is an average-return target,
+not an individual-episode landing test.</p><section><h2>Before training: random rocket</h2><img class="clip" src="random/20261014-190918-462057/flight-episode-0.gif" alt="Recorded rocket flight"><img class="clip" src="random/20261014-190918-462057/flight-episode-1.gif" alt="Recorded rocket flight"></section><section><h2>baseline / seed 0</h2>
+<p class="score">238.8 <small>original mean score</small></p>
+<p>Benchmark met &middot; 100 held-out episodes &middot;
+94% landed &middot; 0% timed out</p>
+<p>Standard deviation: 65.0. Average episode:
+316 frames. Engine-use cost proxy: 44.1.
+Airborne upright/slow frames: 33%.
+Evaluated model's training steps: 1,003,520.</p>
+<p>Videos below use the original reward and fixed episode seeds. They are examples,
+not the complete evaluation.</p><img class="clip" src="../runs/baseline/seed_0/videos/20261014-190932-983985/flight-episode-0.gif" alt="Recorded rocket flight"><img class="clip" src="../runs/baseline/seed_0/videos/20261014-190932-983985/flight-episode-1.gif" alt="Recorded rocket flight"><img class="clip" src="../runs/baseline/seed_0/videos/20261014-190932-983985/flight-episode-2.gif" alt="Recorded rocket flight"></section><section><h2>fixed / seed 0</h2>
+<p class="score">221.3 <small>original mean score</small></p>
+<p>Benchmark met &middot; 100 held-out episodes &middot;
+92% landed &middot; 7% timed out</p>
+<p>Standard deviation: 41.9. Average episode:
+452 frames. Engine-use cost proxy: 67.3.
+Airborne upright/slow frames: 66%.
+Evaluated model's training steps: 1,003,520.</p>
+<p>Videos below use the original reward and fixed episode seeds. They are examples,
+not the complete evaluation.</p><img class="clip" src="../runs/fixed/seed_0/videos/20261014-191047-372018/flight-episode-0.gif" alt="Recorded rocket flight"><img class="clip" src="../runs/fixed/seed_0/videos/20261014-191047-372018/flight-episode-1.gif" alt="Recorded rocket flight"><img class="clip" src="../runs/fixed/seed_0/videos/20261014-191047-372018/flight-episode-2.gif" alt="Recorded rocket flight"></section><section><h2>hover / seed 0</h2>
+<p class="score">-8.2 <small>original mean score</small></p>
+<p>Below 200 benchmark &middot; 100 held-out episodes &middot;
+0% landed &middot; 100% timed out</p>
+<p>Standard deviation: 20.4. Average episode:
+1000 frames. Engine-use cost proxy: 173.0.
+Airborne upright/slow frames: 96%.
+Evaluated model's training steps: 1,003,520.</p>
+<p>Videos below use the original reward and fixed episode seeds. They are examples,
+not the complete evaluation.</p><img class="clip" src="../runs/hover/seed_0/videos/20261014-191022-984890/flight-episode-0.gif" alt="Recorded rocket flight"><img class="clip" src="../runs/hover/seed_0/videos/20261014-191022-984890/flight-episode-1.gif" alt="Recorded rocket flight"><img class="clip" src="../runs/hover/seed_0/videos/20261014-191022-984890/flight-episode-2.gif" alt="Recorded rocket flight"></section><section><h2>time / seed 0</h2>
+<p class="score">235.9 <small>original mean score</small></p>
+<p>Benchmark met &middot; 100 held-out episodes &middot;
+89% landed &middot; 11% timed out</p>
+<p>Standard deviation: 39.5. Average episode:
+412 frames. Engine-use cost proxy: 50.7.
+Airborne upright/slow frames: 50%.
+Evaluated model's training steps: 1,003,520.</p>
+<p>Videos below use the original reward and fixed episode seeds. They are examples,
+not the complete evaluation.</p><img class="clip" src="../runs/time/seed_0/videos/20261014-190949-141843/flight-episode-0.gif" alt="Recorded rocket flight"><img class="clip" src="../runs/time/seed_0/videos/20261014-190949-141843/flight-episode-1.gif" alt="Recorded rocket flight"><img class="clip" src="../runs/time/seed_0/videos/20261014-190949-141843/flight-episode-2.gif" alt="Recorded rocket flight"></section>
+<section><h2>What to investigate</h2><p>Does the hover bonus produce more airborne frames or
+timeouts? Does the fixed reward still land? Compare the full evaluation CSV and videos;
+hovering is a possible learned behavior, not a guaranteed result.</p><p>The fixed reward removes
+the hover bonus, adds a small time cost, and uses a discounted potential difference. It is an
+experiment, not a promise that it beats the original reward.</p></section></html>

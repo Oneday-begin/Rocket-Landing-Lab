@@ -1,0 +1,33 @@
+{
+  "preset": "time",
+  "seed": 0,
+  "requested_steps": 1000000,
+  "n_envs": 4,
+  "threads": 1,
+  "environment": "LunarLander-v3",
+  "reward": {
+    "time_cost": 0.03,
+    "hover_bonus": 0.0,
+    "progress_scale": 0.0,
+    "gamma": 0.99
+  },
+  "learning_rate": 0.0003,
+  "ppo": {
+    "n_steps": 1024,
+    "batch_size": 64,
+    "n_epochs": 10,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "clip_range": 0.2,
+    "policy_layers": [
+      64,
+      64
+    ]
+  },
+  "versions": {
+    "gymnasium": "1.4.0",
+    "stable-baselines3": "2.9.0",
+    "torch": "2.13.0",
+    "numpy": "2.4.4"
+  }
+}

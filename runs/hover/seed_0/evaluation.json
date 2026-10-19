@@ -1,0 +1,19 @@
+{
+  "episodes": 100,
+  "mean_base_return": -8.24405057706472,
+  "std_base_return": 20.441006075516473,
+  "min_base_return": -65.12550854590033,
+  "max_base_return": 39.60047978663412,
+  "landed_rate": 0.0,
+  "timeout_rate": 1.0,
+  "mean_steps": 1000.0,
+  "mean_fuel_proxy": 172.9857,
+  "mean_hover_fraction": 0.9646399999999999,
+  "mean_shaped_return": -8.24405057706472,
+  "benchmark_met": false,
+  "model": "runs/hover/seed_0/final_model.zip",
+  "evaluation_seed": 100000,
+  "evaluated_training_steps": 1003520,
+  "model_sha256": "41485cde98dbdb6a1e535f085bf7d79ba4093c9ca77a038d1c808f3f171ad748",
+  "reward": "original Gymnasium reward; custom shaping disabled"
+}

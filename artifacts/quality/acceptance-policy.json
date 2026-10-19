@@ -1,0 +1,10 @@
+{
+  "minimum_episodes": 50,
+  "minimum_landing_ci_lower": {
+    "calm": 0.7,
+    "breezy": 0.6,
+    "gusty": 0.5
+  },
+  "maximum_timeout_rate": 0.2,
+  "minimum_calm_score": 200.0
+}

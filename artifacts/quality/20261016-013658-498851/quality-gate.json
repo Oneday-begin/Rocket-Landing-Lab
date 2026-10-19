@@ -1,0 +1,382 @@
+{
+  "created_utc": "2026-10-15T20:08:29.971982+00:00",
+  "policy": {
+    "minimum_episodes": 50,
+    "minimum_landing_ci_lower": {
+      "calm": 0.7,
+      "breezy": 0.6,
+      "gusty": 0.5
+    },
+    "maximum_timeout_rate": 0.2,
+    "minimum_calm_score": 200.0
+  },
+  "first_episode_seed": 300000,
+  "models": [
+    {
+      "model": "1. baseline / seed_0 / final_model",
+      "model_sha256": "6ea5c9d75710c533f86c412940af31cfcf39c73d79c9227c0eabce2cdd961cd8",
+      "passed": false,
+      "checks": [
+        {
+          "check": "calm: exactly one result",
+          "passed": true,
+          "observed": 1,
+          "required": 1
+        },
+        {
+          "check": "calm: sample size",
+          "passed": true,
+          "observed": 50,
+          "required": 50
+        },
+        {
+          "check": "calm: landing confidence lower bound",
+          "passed": true,
+          "observed": 0.7148578393696501,
+          "required": 0.7
+        },
+        {
+          "check": "calm: timeout rate",
+          "passed": true,
+          "observed": 0.02,
+          "required": 0.2
+        },
+        {
+          "check": "calm: original score",
+          "passed": true,
+          "observed": 215.24963295740415,
+          "required": 200.0
+        },
+        {
+          "check": "breezy: exactly one result",
+          "passed": true,
+          "observed": 1,
+          "required": 1
+        },
+        {
+          "check": "breezy: sample size",
+          "passed": true,
+          "observed": 50,
+          "required": 50
+        },
+        {
+          "check": "breezy: landing confidence lower bound",
+          "passed": false,
+          "observed": 0.4815044693099298,
+          "required": 0.6
+        },
+        {
+          "check": "breezy: timeout rate",
+          "passed": true,
+          "observed": 0.0,
+          "required": 0.2
+        },
+        {
+          "check": "gusty: exactly one result",
+          "passed": true,
+          "observed": 1,
+          "required": 1
+        },
+        {
+          "check": "gusty: sample size",
+          "passed": true,
+          "observed": 50,
+          "required": 50
+        },
+        {
+          "check": "gusty: landing confidence lower bound",
+          "passed": false,
+          "observed": 0.19103553500880954,
+          "required": 0.5
+        },
+        {
+          "check": "gusty: timeout rate",
+          "passed": true,
+          "observed": 0.0,
+          "required": 0.2
+        },
+        {
+          "check": "Saved weights match evaluated weights",
+          "passed": true,
+          "observed": "6ea5c9d75710c533f86c412940af31cfcf39c73d79c9227c0eabce2cdd961cd8",
+          "required": "matching SHA-256"
+        }
+      ]
+    },
+    {
+      "model": "2. fixed / seed_0 / final_model",
+      "model_sha256": "685a5ece4ad4cb2b7bc8e8be79aa35b36f6ec20adaceb9c2ee4cacfdf94a3874",
+      "passed": true,
+      "checks": [
+        {
+          "check": "calm: exactly one result",
+          "passed": true,
+          "observed": 1,
+          "required": 1
+        },
+        {
+          "check": "calm: sample size",
+          "passed": true,
+          "observed": 50,
+          "required": 50
+        },
+        {
+          "check": "calm: landing confidence lower bound",
+          "passed": true,
+          "observed": 0.7381380628941446,
+          "required": 0.7
+        },
+        {
+          "check": "calm: timeout rate",
+          "passed": true,
+          "observed": 0.1,
+          "required": 0.2
+        },
+        {
+          "check": "calm: original score",
+          "passed": true,
+          "observed": 209.68763034391404,
+          "required": 200.0
+        },
+        {
+          "check": "breezy: exactly one result",
+          "passed": true,
+          "observed": 1,
+          "required": 1
+        },
+        {
+          "check": "breezy: sample size",
+          "passed": true,
+          "observed": 50,
+          "required": 50
+        },
+        {
+          "check": "breezy: landing confidence lower bound",
+          "passed": true,
+          "observed": 0.8116175308165717,
+          "required": 0.6
+        },
+        {
+          "check": "breezy: timeout rate",
+          "passed": true,
+          "observed": 0.04,
+          "required": 0.2
+        },
+        {
+          "check": "gusty: exactly one result",
+          "passed": true,
+          "observed": 1,
+          "required": 1
+        },
+        {
+          "check": "gusty: sample size",
+          "passed": true,
+          "observed": 50,
+          "required": 50
+        },
+        {
+          "check": "gusty: landing confidence lower bound",
+          "passed": true,
+          "observed": 0.6920394632569922,
+          "required": 0.5
+        },
+        {
+          "check": "gusty: timeout rate",
+          "passed": true,
+          "observed": 0.08,
+          "required": 0.2
+        },
+        {
+          "check": "Saved weights match evaluated weights",
+          "passed": true,
+          "observed": "685a5ece4ad4cb2b7bc8e8be79aa35b36f6ec20adaceb9c2ee4cacfdf94a3874",
+          "required": "matching SHA-256"
+        }
+      ]
+    },
+    {
+      "model": "3. hover / seed_0 / final_model",
+      "model_sha256": "41485cde98dbdb6a1e535f085bf7d79ba4093c9ca77a038d1c808f3f171ad748",
+      "passed": false,
+      "checks": [
+        {
+          "check": "calm: exactly one result",
+          "passed": true,
+          "observed": 1,
+          "required": 1
+        },
+        {
+          "check": "calm: sample size",
+          "passed": true,
+          "observed": 50,
+          "required": 50
+        },
+        {
+          "check": "calm: landing confidence lower bound",
+          "passed": false,
+          "observed": 6.938893903907228e-18,
+          "required": 0.7
+        },
+        {
+          "check": "calm: timeout rate",
+          "passed": false,
+          "observed": 1.0,
+          "required": 0.2
+        },
+        {
+          "check": "calm: original score",
+          "passed": false,
+          "observed": -9.153999818581273,
+          "required": 200.0
+        },
+        {
+          "check": "breezy: exactly one result",
+          "passed": true,
+          "observed": 1,
+          "required": 1
+        },
+        {
+          "check": "breezy: sample size",
+          "passed": true,
+          "observed": 50,
+          "required": 50
+        },
+        {
+          "check": "breezy: landing confidence lower bound",
+          "passed": false,
+          "observed": 6.938893903907228e-18,
+          "required": 0.6
+        },
+        {
+          "check": "breezy: timeout rate",
+          "passed": false,
+          "observed": 1.0,
+          "required": 0.2
+        },
+        {
+          "check": "gusty: exactly one result",
+          "passed": true,
+          "observed": 1,
+          "required": 1
+        },
+        {
+          "check": "gusty: sample size",
+          "passed": true,
+          "observed": 50,
+          "required": 50
+        },
+        {
+          "check": "gusty: landing confidence lower bound",
+          "passed": false,
+          "observed": 0.011038884327619805,
+          "required": 0.5
+        },
+        {
+          "check": "gusty: timeout rate",
+          "passed": false,
+          "observed": 0.94,
+          "required": 0.2
+        },
+        {
+          "check": "Saved weights match evaluated weights",
+          "passed": true,
+          "observed": "41485cde98dbdb6a1e535f085bf7d79ba4093c9ca77a038d1c808f3f171ad748",
+          "required": "matching SHA-256"
+        }
+      ]
+    },
+    {
+      "model": "4. time / seed_0 / final_model",
+      "model_sha256": "043d069fae7e34b8cba97b310e9a0c8ab75266521c1e9cd26a25122b4f90efa0",
+      "passed": false,
+      "checks": [
+        {
+          "check": "calm: exactly one result",
+          "passed": true,
+          "observed": 1,
+          "required": 1
+        },
+        {
+          "check": "calm: sample size",
+          "passed": true,
+          "observed": 50,
+          "required": 50
+        },
+        {
+          "check": "calm: landing confidence lower bound",
+          "passed": true,
+          "observed": 0.8378290831116182,
+          "required": 0.7
+        },
+        {
+          "check": "calm: timeout rate",
+          "passed": true,
+          "observed": 0.06,
+          "required": 0.2
+        },
+        {
+          "check": "calm: original score",
+          "passed": true,
+          "observed": 238.68256616854708,
+          "required": 200.0
+        },
+        {
+          "check": "breezy: exactly one result",
+          "passed": true,
+          "observed": 1,
+          "required": 1
+        },
+        {
+          "check": "breezy: sample size",
+          "passed": true,
+          "observed": 50,
+          "required": 50
+        },
+        {
+          "check": "breezy: landing confidence lower bound",
+          "passed": true,
+          "observed": 0.8378290831116182,
+          "required": 0.6
+        },
+        {
+          "check": "breezy: timeout rate",
+          "passed": true,
+          "observed": 0.04,
+          "required": 0.2
+        },
+        {
+          "check": "gusty: exactly one result",
+          "passed": true,
+          "observed": 1,
+          "required": 1
+        },
+        {
+          "check": "gusty: sample size",
+          "passed": true,
+          "observed": 50,
+          "required": 50
+        },
+        {
+          "check": "gusty: landing confidence lower bound",
+          "passed": false,
+          "observed": 0.4815044693099298,
+          "required": 0.5
+        },
+        {
+          "check": "gusty: timeout rate",
+          "passed": true,
+          "observed": 0.04,
+          "required": 0.2
+        },
+        {
+          "check": "Saved weights match evaluated weights",
+          "passed": true,
+          "observed": "043d069fae7e34b8cba97b310e9a0c8ab75266521c1e9cd26a25122b4f90efa0",
+          "required": "matching SHA-256"
+        }
+      ]
+    }
+  ],
+  "passed": false,
+  "scope": "Project simulation acceptance criteria, not a real-flight certification"
+}

@@ -1,0 +1,3 @@
+# Optional: GIF recordings work with the main requirements alone.
+moviepy>=2,<3
+imageio-ffmpeg>=0.6,<1

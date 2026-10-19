@@ -1,0 +1,16 @@
+<!doctype html><html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Rocket weather tests</title>
+<style>body{background:#0b1120;color:#e2e8f0;font:17px/1.6 system-ui;max-width:1200px;
+margin:40px auto;padding:0 24px}h1{color:#67e8f9}img{width:100%;border-radius:12px}
+table{width:100%;border-collapse:collapse}td,th{text-align:left;padding:10px;border-bottom:1px solid #334155}
+.table{overflow-x:auto}a{color:#67e8f9}</style><h1>How well does the rocket handle wind?</h1>
+<p>These are tests of existing policies, with their weights unchanged. All scores use the original
+game reward. Calm is the original task; breezy and gusty are additional stress tests. The same
+episode seed numbers are used across every model and condition.</p>
+<img src="weather-comparison.png" alt="Landing rates and original scores across weather conditions">
+<div class="table"><table><thead><tr><th>Model</th><th>Weather</th><th>Mean score</th>
+<th>Landed</th><th>95% interval</th><th>Timeout</th><th>Episodes</th></tr></thead><tbody><tr><td>1. baseline / seed_0 / final_model</td><td>Calm</td><td>215.2</td><td>84%</td><td>71%–92%</td><td>2%</td><td>50</td></tr><tr><td>1. baseline / seed_0 / final_model</td><td>Breezy</td><td>156.5</td><td>62%</td><td>48%–74%</td><td>0%</td><td>50</td></tr><tr><td>1. baseline / seed_0 / final_model</td><td>Gusty</td><td>65.4</td><td>30%</td><td>19%–44%</td><td>0%</td><td>50</td></tr><tr><td>2. fixed / seed_0 / final_model</td><td>Calm</td><td>209.7</td><td>86%</td><td>74%–93%</td><td>10%</td><td>50</td></tr><tr><td>2. fixed / seed_0 / final_model</td><td>Breezy</td><td>213.9</td><td>92%</td><td>81%–97%</td><td>4%</td><td>50</td></tr><tr><td>2. fixed / seed_0 / final_model</td><td>Gusty</td><td>187.9</td><td>82%</td><td>69%–90%</td><td>8%</td><td>50</td></tr><tr><td>3. hover / seed_0 / final_model</td><td>Calm</td><td>-9.2</td><td>0%</td><td>0%–7%</td><td>100%</td><td>50</td></tr><tr><td>3. hover / seed_0 / final_model</td><td>Breezy</td><td>-22.7</td><td>0%</td><td>0%–7%</td><td>100%</td><td>50</td></tr><tr><td>3. hover / seed_0 / final_model</td><td>Gusty</td><td>-40.1</td><td>4%</td><td>1%–13%</td><td>94%</td><td>50</td></tr><tr><td>4. time / seed_0 / final_model</td><td>Calm</td><td>238.7</td><td>94%</td><td>84%–98%</td><td>6%</td><td>50</td></tr><tr><td>4. time / seed_0 / final_model</td><td>Breezy</td><td>224.5</td><td>94%</td><td>84%–98%</td><td>4%</td><td>50</td></tr><tr><td>4. time / seed_0 / final_model</td><td>Gusty</td><td>113.8</td><td>62%</td><td>48%–74%</td><td>4%</td><td>50</td></tr></tbody></table></div><p>Calm: wind off. Breezy: wind power 8, turbulence 0.5.
+Gusty: wind power 15, turbulence 1.5. These are simulator settings, not real-world wind speeds.</p>
+<p>The intervals describe uncertainty across episode outcomes for each fixed policy. They do not
+measure variation across training seeds. Small tests can have wide intervals; an apparent difference
+does not establish that one policy is better.</p><p>Episode seeds start at 300000. Results are saved in <a href="comparison.csv">comparison.csv</a> and <a href="episodes.csv">episodes.csv</a>.</p></html>

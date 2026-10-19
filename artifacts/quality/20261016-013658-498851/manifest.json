@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "episodes_per_case": 50,
+  "first_episode_seed": 300000,
+  "scenarios": [
+    "calm",
+    "breezy",
+    "gusty"
+  ],
+  "models": [
+    "runs/baseline/seed_0/final_model.zip",
+    "runs/fixed/seed_0/final_model.zip",
+    "runs/hover/seed_0/final_model.zip",
+    "runs/time/seed_0/final_model.zip"
+  ],
+  "completed_cases": 12,
+  "reward": "original environment reward; shaping disabled"
+}
