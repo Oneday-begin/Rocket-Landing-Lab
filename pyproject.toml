@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "rocket-landing-lab"
-version = "2.0.0"
+version = "3.0.0"
 description = "PPO LunarLander training and honest reward-shaping experiments"
 requires-python = ">=3.10"
 dynamic = ["dependencies"]
@@ -17,6 +17,9 @@ dependencies = {file = ["requirements.txt"]}
 
 [tool.setuptools.packages.find]
 include = ["rocket_landing*"]
+
+[tool.setuptools.package-data]
+rocket_landing = ["web/*.html", "web/*.css", "web/*.js"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

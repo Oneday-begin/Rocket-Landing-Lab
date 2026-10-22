@@ -82,3 +82,19 @@ UPGRADE_STATUS.md
 environment-freeze.txt
 PROJECT-GUIDE.md
 PROJECT-GUIDE.html
+
+# Curated browser lab evidence
+!artifacts/lab/
+!artifacts/lab/flights.sqlite
+!artifacts/lab/predictor.joblib
+!artifacts/lab/predictor-report.json
+!artifacts/lab/broader-results.json
+!runs/robust/
+!runs/robust/seed_2/
+!runs/robust/seed_2/final_model.zip
+!runs/robust/seed_2/config.json
+!runs/robust/seed_2/training.json
+
+!artifacts/lab/broader-evaluation/
+!artifacts/lab/broader-evaluation/20261021-015237-393978/
+!artifacts/lab/broader-evaluation/20261021-015237-393978/episodes.csv

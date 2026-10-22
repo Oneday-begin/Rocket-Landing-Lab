@@ -1,0 +1,7 @@
+{
+  "source_training_steps": 1003520,
+  "additional_steps": 200704,
+  "total_steps": 1204224,
+  "wall_seconds": 128.14099999999962,
+  "interrupted": false
+}

@@ -1,0 +1,19 @@
+{
+  "preset": "robust",
+  "seed": 2,
+  "source_model": "runs/fixed/seed_0/final_model.zip",
+  "source_sha256": "685a5ece4ad4cb2b7bc8e8be79aa35b36f6ec20adaceb9c2ee4cacfdf94a3874",
+  "weather": {
+    "wind_uniform": [
+      0,
+      18
+    ],
+    "turbulence_uniform": [
+      0,
+      1.8
+    ]
+  },
+  "reward": "original only",
+  "requested_additional_steps": 200000,
+  "description": "Fine-tune fixed seed 0 with new episode weather; one training seed, experimental."
+}

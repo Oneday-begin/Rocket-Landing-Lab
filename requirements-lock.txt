@@ -11,3 +11,9 @@ Box2D==2.3.10
 cloudpickle==3.1.2
 farama-notifications==0.0.6
 swig==4.5.1
+fastapi==0.133.1
+uvicorn==0.41.0
+scikit-learn==1.9.0
+joblib==1.5.3
+pypdf==6.10.2
+httpx==0.28.1

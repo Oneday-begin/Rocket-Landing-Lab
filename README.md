@@ -2,7 +2,15 @@
 
 A local deep reinforcement learning lab that trains PPO to land a rocket, demonstrates reward hacking, and evaluates reliability across weather conditions.
 
-Built with Python, Gymnasium, Stable-Baselines3, PyTorch and Tkinter. Inspired by Hari (@harixganesh)'s Lunar Lander reward-shaping project. Implementation developed with AI assistance.
+Built with Python, Gymnasium, Stable-Baselines3, PyTorch, FastAPI, scikit-learn, SQLite and a local Ollama assistant. Inspired by Hari (@harixganesh)'s Lunar Lander reward-shaping project. Implementation developed with AI assistance.
+
+## New: guided browser lab
+
+Double-click **Open-Web-Lab.cmd** after setup. Start with the beginner introduction, then explore telemetry analytics, flight replay, a supervised failure predictor, a local RAG assistant, and randomized-weather PPO training. Includes 720 recorded flights and measured predictor results. The older desktop panel remains available.
+
+Read the [web lab and placement supplement](docs/WEB-LAB.md) for architecture, demonstration steps, concepts, evaluation and limitations. The predictor has 77.8% held-out accuracy but only 21.7% failure recall; it is not a dependable crash alarm. Local generated answers use Ollama with `qwen3:1.7b`; without it the assistant shows retrieved evidence.
+
+![Rocket Landing Lab introduction](docs/web-lab-preview.png)
 
 ## Features
 
@@ -10,7 +18,7 @@ Built with Python, Gymnasium, Stable-Baselines3, PyTorch and Tkinter. Inspired b
 - Desktop controls for watching, recording and evaluating flights.
 - Calm, breezy and gusty stress tests with confidence intervals and CSV exports.
 - Automated quality gate: sample size, landing reliability, timeouts, original score and model identity.
-- Repeatable evaluation seeds, model checksums and 33 automated tests.
+- Repeatable evaluation seeds, model checksums and automated regression tests.
 
 ## Quick start — Windows
 
@@ -59,6 +67,6 @@ Open **View-Results.cmd** for the original report and **View-Quality-Results.cmd
 - `tests/`: behavior and regression tests.
 - `runs/`: four final models, settings and original measured evaluations.
 - `artifacts/`: selected demonstration reports, media and quality-test evidence.
-- [Placement preparation report](docs/Rocket-Landing-Placement-Report.pdf): 29 pages covering libraries, PPO mathematics, rewards, architecture, results, interview questions, exercises and a seven-day revision plan.
+- [Placement preparation report](docs/Rocket-Landing-Placement-Report.pdf): 39 pages covering libraries, PPO mathematics, rewards, architecture, results, interview questions, exercises and a seven-day revision plan.
 
 Virtual environments, caches, intermediate checkpoints, temporary experiments and machine-specific helper scripts are excluded. New generated outputs are ignored by Git; explicitly add only results you intend to publish. This is the main working project and GitHub source folder. Local environments and generated files stay excluded by .gitignore.
