@@ -10,3 +10,5 @@
 .sidebar nav{scrollbar-width:none}.sidebar nav::-webkit-scrollbar{display:none}.method-table{display:block;overflow-x:auto}.chat-answer{overflow-wrap:anywhere}
 
 @media(max-width:600px){.hero h1{font-size:clamp(42px,11vw,61px)}.hero-actions{flex-wrap:wrap}.mission-caption strong{font-size:18px}.mission-top{padding:17px}.hero{overflow:hidden}.panel{min-width:0}.metric-grid{grid-template-columns:1fr}.app-footer{flex-wrap:wrap}}
+
+@media(max-width:600px){.sidebar nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible}.sidebar nav button{gap:5px;padding:9px 5px;white-space:normal}.sidebar nav button span{font-size:10px}}
