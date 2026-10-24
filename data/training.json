@@ -1,0 +1,180 @@
+{
+  "evaluation": "artifacts/lab/broader-evaluation/20261021-104945-153151",
+  "cases": [
+    {
+      "model": "1. fixed / seed_0 / final_model",
+      "model_path": "runs/fixed/seed_0/final_model.zip",
+      "model_sha256": "685a5ece4ad4cb2b7bc8e8be79aa35b36f6ec20adaceb9c2ee4cacfdf94a3874",
+      "scenario": "calm",
+      "weather": {
+        "title": "Calm",
+        "enable_wind": false,
+        "wind_power": 0.0,
+        "turbulence_power": 0.0
+      },
+      "episodes": 50,
+      "mean_base_return": 211.78142412585166,
+      "std_base_return": 59.167596200615115,
+      "min_base_return": -30.185458299270323,
+      "max_base_return": 274.620238770837,
+      "landed_rate": 0.9,
+      "landed_ci95": [
+        0.7863976856252035,
+        0.9565242350681096
+      ],
+      "timeout_rate": 0.06,
+      "mean_steps": 438.64,
+      "mean_fuel_proxy": 66.1524,
+      "mean_hover_fraction": 0.6705622227048298,
+      "mean_shaped_return": 211.78142412585166,
+      "benchmark_met": true,
+      "benchmark_applicable": true
+    },
+    {
+      "model": "1. fixed / seed_0 / final_model",
+      "model_path": "runs/fixed/seed_0/final_model.zip",
+      "model_sha256": "685a5ece4ad4cb2b7bc8e8be79aa35b36f6ec20adaceb9c2ee4cacfdf94a3874",
+      "scenario": "breezy",
+      "weather": {
+        "title": "Breezy",
+        "enable_wind": true,
+        "wind_power": 8.0,
+        "turbulence_power": 0.5
+      },
+      "episodes": 50,
+      "mean_base_return": 216.98704051778932,
+      "std_base_return": 64.24959551430395,
+      "min_base_return": -42.731319315270056,
+      "max_base_return": 298.5431051466891,
+      "landed_rate": 0.92,
+      "landed_ci95": [
+        0.8116175308165717,
+        0.968450485911407
+      ],
+      "timeout_rate": 0.04,
+      "mean_steps": 429.36,
+      "mean_fuel_proxy": 65.1804,
+      "mean_hover_fraction": 0.5173456997099999,
+      "mean_shaped_return": 216.98704051778932,
+      "benchmark_met": null,
+      "benchmark_applicable": false
+    },
+    {
+      "model": "1. fixed / seed_0 / final_model",
+      "model_path": "runs/fixed/seed_0/final_model.zip",
+      "model_sha256": "685a5ece4ad4cb2b7bc8e8be79aa35b36f6ec20adaceb9c2ee4cacfdf94a3874",
+      "scenario": "gusty",
+      "weather": {
+        "title": "Gusty",
+        "enable_wind": true,
+        "wind_power": 15.0,
+        "turbulence_power": 1.5
+      },
+      "episodes": 50,
+      "mean_base_return": 141.646119295056,
+      "std_base_return": 125.04983152235125,
+      "min_base_return": -95.65379358530055,
+      "max_base_return": 292.5003831900444,
+      "landed_rate": 0.68,
+      "landed_ci95": [
+        0.5418970269185592,
+        0.7924178373934316
+      ],
+      "timeout_rate": 0.04,
+      "mean_steps": 414.34,
+      "mean_fuel_proxy": 62.38859999999999,
+      "mean_hover_fraction": 0.3140198184110864,
+      "mean_shaped_return": 141.646119295056,
+      "benchmark_met": null,
+      "benchmark_applicable": false
+    },
+    {
+      "model": "2. robust / seed_3 / final_model",
+      "model_path": "runs/robust/seed_3/final_model.zip",
+      "model_sha256": "782f333fec2c408dcc8c121116901ad5a165d96528de75f8ce8b606e2f8d532d",
+      "scenario": "calm",
+      "weather": {
+        "title": "Calm",
+        "enable_wind": false,
+        "wind_power": 0.0,
+        "turbulence_power": 0.0
+      },
+      "episodes": 50,
+      "mean_base_return": 207.56471653877193,
+      "std_base_return": 64.90930459736529,
+      "min_base_return": -30.18715781417886,
+      "max_base_return": 268.5505967359375,
+      "landed_rate": 0.88,
+      "landed_ci95": [
+        0.7619518261679701,
+        0.9438239984906773
+      ],
+      "timeout_rate": 0.06,
+      "mean_steps": 435.5,
+      "mean_fuel_proxy": 66.14280000000001,
+      "mean_hover_fraction": 0.690039169092706,
+      "mean_shaped_return": 207.56471653877193,
+      "benchmark_met": true,
+      "benchmark_applicable": true
+    },
+    {
+      "model": "2. robust / seed_3 / final_model",
+      "model_path": "runs/robust/seed_3/final_model.zip",
+      "model_sha256": "782f333fec2c408dcc8c121116901ad5a165d96528de75f8ce8b606e2f8d532d",
+      "scenario": "breezy",
+      "weather": {
+        "title": "Breezy",
+        "enable_wind": true,
+        "wind_power": 8.0,
+        "turbulence_power": 0.5
+      },
+      "episodes": 50,
+      "mean_base_return": 202.59001108157813,
+      "std_base_return": 70.57589919142048,
+      "min_base_return": -49.298026094023,
+      "max_base_return": 279.538536801645,
+      "landed_rate": 0.86,
+      "landed_ci95": [
+        0.7381380628941446,
+        0.9304916657298371
+      ],
+      "timeout_rate": 0.08,
+      "mean_steps": 464.92,
+      "mean_fuel_proxy": 66.07379999999999,
+      "mean_hover_fraction": 0.5262091348535063,
+      "mean_shaped_return": 202.59001108157813,
+      "benchmark_met": null,
+      "benchmark_applicable": false
+    },
+    {
+      "model": "2. robust / seed_3 / final_model",
+      "model_path": "runs/robust/seed_3/final_model.zip",
+      "model_sha256": "782f333fec2c408dcc8c121116901ad5a165d96528de75f8ce8b606e2f8d532d",
+      "scenario": "gusty",
+      "weather": {
+        "title": "Gusty",
+        "enable_wind": true,
+        "wind_power": 15.0,
+        "turbulence_power": 1.5
+      },
+      "episodes": 50,
+      "mean_base_return": 142.83630803656092,
+      "std_base_return": 124.36483064040684,
+      "min_base_return": -102.00855841472006,
+      "max_base_return": 289.2206309241718,
+      "landed_rate": 0.66,
+      "landed_ci95": [
+        0.521538260502326,
+        0.7756305077749992
+      ],
+      "timeout_rate": 0.08,
+      "mean_steps": 445.62,
+      "mean_fuel_proxy": 62.368199999999995,
+      "mean_hover_fraction": 0.3052079618235246,
+      "mean_shaped_return": 142.83630803656092,
+      "benchmark_met": null,
+      "benchmark_applicable": false
+    }
+  ],
+  "protocol": "50 unseen seed numbers per condition (700000\u2013700049); fixed source vs wind-fine-tuned policy; one training seed."
+}
