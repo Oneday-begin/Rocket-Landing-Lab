@@ -1,2 +1,6 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+*.pdf binary
+*.gif binary
+*.png binary
+*.zip binary
+*.sqlite binary
+*.joblib binary

@@ -67,6 +67,11 @@ Open **View-Results.cmd** for the original report and **View-Quality-Results.cmd
 - `tests/`: behavior and regression tests.
 - `runs/`: four final models, settings and original measured evaluations.
 - `artifacts/`: selected demonstration reports, media and quality-test evidence.
-- [Placement preparation report](docs/Rocket-Landing-Placement-Report.pdf): 39 pages covering libraries, PPO mathematics, rewards, architecture, results, interview questions, exercises and a seven-day revision plan.
+- [Placement preparation report](docs/Rocket-Landing-Placement-Report.pdf): 46 pages covering libraries, PPO mathematics, rewards, architecture, results, interview questions, exercises and a seven-day revision plan.
 
 Virtual environments, caches, intermediate checkpoints, temporary experiments and machine-specific helper scripts are excluded. New generated outputs are ignored by Git; explicitly add only results you intend to publish. This is the main working project and GitHub source folder. Local environments and generated files stay excluded by .gitignore.
+
+## Safe phone-demo updates
+
+See deployment/README.md and the final chapter of the placement PDF. deployment/deploy_phone_demo.ps1 exports, scans and optionally publishes the read-only demo to gh-pages. GitHub secret scanning and push protection are enabled. Keep .cache and credentials out of Git.
+
